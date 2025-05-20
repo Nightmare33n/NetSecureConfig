@@ -17,11 +17,16 @@ module.exports = {
         wiggle: "wiggle 1.5s ease-in-out infinite",
         popup: "popup 0.25s ease-in-out",
         shimmer: "shimmer 3s ease-out infinite alternate",
+        'fade-in': 'fadeIn 0.5s ease-in-out',
       },
       keyframes: {
         opacity: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
+        },
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(10px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
         },
         appearFromRight: {
           "0%": { opacity: 0.3, transform: "translate(15%, 0px);" },
