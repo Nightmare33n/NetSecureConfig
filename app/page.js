@@ -23,7 +23,6 @@ export default function Home() {
         <CTA />
       </main>
       <Footer />
-      <h1>a</h1>
     </>
     
   );
