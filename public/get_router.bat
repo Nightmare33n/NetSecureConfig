@@ -1,0 +1,6 @@
+@echo off
+echo Ejecutando script de configuracion del router...
+python "%~dp0get_router.py"
+echo.
+echo Presiona cualquier tecla para salir...
+pause > nul 

@@ -1,7 +1,14 @@
 import Image from "next/image";
 import config from "@/config";
+import { useRouter } from 'next/navigation';
 
 const CTA = () => {
+  const router = useRouter();
+
+  const handleGetStarted = () => {
+    router.push('/auth');
+  };
+
   return (
     <section className="relative hero overflow-hidden min-h-screen">
       <Image
@@ -21,7 +28,10 @@ const CTA = () => {
             section...
           </p>
 
-          <button className="btn btn-primary btn-wide">
+          <button 
+            onClick={handleGetStarted}
+            className="btn btn-primary btn-wide"
+          >
             Get {config.appName}
           </button>
         </div>
