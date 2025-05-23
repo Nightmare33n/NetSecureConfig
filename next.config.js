@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -9,9 +8,6 @@ const nextConfig = {
       "images.unsplash.com",
       "logos-world.net",
     ],
-  },
-  experimental: {
-    serverActions: true,
   },
 };
 
